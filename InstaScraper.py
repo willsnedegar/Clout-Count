@@ -17,7 +17,7 @@ import googleapiclient.errors
 
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://willsned:Cardinals1@cluster0-lcapt.gcp.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://willsned:<password>@cluster0-lcapt.gcp.mongodb.net/test?retryWrites=true&w=majority")
 db = client.pymongo_test
 
 
@@ -54,7 +54,7 @@ def main():
     #scrapeYoutubeAccount(driver,'dog')
     #scrapeFacebook('dog')
 
-    # python_tweets = Twython("IuVdTEmT07uWCvq9xcFQq9BfX", "xMHDCrwWggo9L439Mggn7sTDT5y4lipcVHwZ0xLALJzGrroyrS")
+    # python_tweets = Twython("<twitter api key and secret>")
     #
     # with open('twitterHandles.txt') as f:
     #     twitterHandles = f.read().splitlines()
